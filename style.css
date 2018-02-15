@@ -1,0 +1,60 @@
+body {
+    display:grid;
+    grid-template-rows:10% 20% 60% 10%;
+    grid-template-areas:
+    "header"
+    "breeds"
+    "image"
+    "footer";
+    margin:0px;
+    padding:0px;
+    height:100vh;
+    
+}
+
+div{
+    padding:20px;
+    text-align:center;
+}
+
+#header {
+    grid-area:header;
+    background-image: url("pawprint.jpg");
+}
+
+#breeds{
+    grid-area:breeds;
+    background-color:#C19A6B
+}
+
+#image{
+    grid-area:image;
+    background-color:#C19A6B;
+}
+
+#footer{
+    text-align:right;
+    grid-area:footer;
+    background-color:black;
+}
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
+img{
+    max-height:100%;
+    max-width:100%;
+}
+
+@media screen and (min-width: 700px){
+    body {
+	grid-template-rows:15% 80% 5%;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+	"header header"
+	    "breeds image"
+	    "footer footer";
+	
+}
